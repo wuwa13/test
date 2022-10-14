@@ -9,7 +9,7 @@ li {
 
 body {
     background-color: #ee9ca7;
-
+    overflow: hidden;
 }
 
 .bg-bubbles {

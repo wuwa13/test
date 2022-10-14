@@ -11,7 +11,7 @@
     height: 250px;
     top: 250px;
     left: 50px;
-    border: solid 1px greenyellow;
+
 }
 
 .sel li {
@@ -36,7 +36,7 @@
     float: left;
     width: 1200px;
     height: 500px;
-    border: solid 1px black;
+
     margin-left: 300px;
     margin-top: 150px;
 }
@@ -76,7 +76,16 @@
 }
 
 .dot_info_1 {
+    position: absolute;
     float: left;
+    width: 150px;
+    height: 100px;
+    left: 50px;
+    top: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+
 
 }
 
@@ -89,7 +98,7 @@
     height: 850px;
     left: 180px;
     top: -850px;
-    background-color: #4e4e4e;
+    background-color: #d1d1d1;
     /*  animation: mymove1 5s; */
     display: block;
 }
@@ -112,7 +121,7 @@
     border-radius: 50%;
     left: 175px;
     top: -50px;
-    background-color: aqua;
+    background-color: #ffffff;
     /*  animation: mymove 5s calc(0.25s * 1); */
     /*   animation-fill-mode: forwards; */
     display: block;
@@ -153,6 +162,11 @@
     }
 }
 
+.dot_2_to p,
+.dot_2_to1 p {
+    margin-top: -120px;
+}
+
 .dot_2_to1 {
     float: right;
     width: 1px;
@@ -177,4 +191,89 @@
 
         animation-play-state: paused;
     }
+}
+
+.p1 {
+
+    float: left;
+    width: 370px;
+    height: 30px;
+    font-size: 17px;
+    margin-top: 170px;
+    font-size: 23px;
+    margin-left: 90px;
+    animation: fadeDown 5s;
+}
+
+@keyframes fadeDown {
+    0% {
+        top: -100px;
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0;
+        top: -75;
+    }
+
+    50% {
+        opacity: 1;
+        top: -25px;
+    }
+
+    75% {
+        opacity: 1;
+        top: -10px;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.images {
+    float: right;
+    width: 500px;
+    height: 200px;
+    animation: fadeDown1 5s calc(0s);
+
+}
+
+@keyframes fadeDown1 {
+    0% {
+        top: -100px;
+        opacity: 0
+    }
+
+    25% {
+        opacity: 0;
+        top: -75;
+    }
+
+    50% {
+        opacity: 1;
+        top: -25px;
+    }
+
+    75% {
+        opacity: 1;
+        top: -10px;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.images img {
+    float: left;
+    width: 500px;
+    height: 500px;
+}
+
+.gif {
+    position: relative;
+    top: 900px;
 }

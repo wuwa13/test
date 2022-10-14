@@ -12,10 +12,12 @@ window.addEventListener('load', function () {
     var dot_2_to = str('dot_2_to');
     var dot_2_to1 = str('dot_2_to1');
     var x = 0;
-
+    var str_info = "祝你每天开开心心，心想事成。"
+    var p = str('p1');
     if (x == 0) {
         anviation(dot_an, 350, dot_info);
-        addhtml(dot_info_1, '某某某生日快乐');
+        addhtml(dot_info_1, '生日快乐');
+        addhtml1(str_info, p);
 
     }
 
@@ -35,6 +37,7 @@ window.addEventListener('load', function () {
                 dotandline();
             }
             x = this.getAttribute('index');
+
             if (x == 0) {
                 li_index();
 
@@ -69,6 +72,8 @@ window.addEventListener('load', function () {
         dot_an.style.top = -250 + 'px';
         dot_an.style.display = 'none';//隐藏
         dot_info.style.display = 'none';
+        dot_line.style.display = 'block';
+        dot_dot.style.display = 'block';
         setTimeout(function () { dot_line.style.animation = "mymove1 2s"; }, 30);
 
 
@@ -119,14 +124,21 @@ window.addEventListener('load', function () {
         obj.style.fontSize = 25 + 'px';
         obj.style.marginLeft = 100 + 'px';
         obj.style.marginTop = 10 + 'px';
-    }
 
+    }
+    function addhtml1(target, pin) {
+        for (var i = 0; i < target.length; i++) {
+            pin.innerHTML += target.charAt(i);
+        }
+    }
     var m = 0;
     /*  滚轮监听 */
     windowAddMouseWheel();
-    function windowAddMouseWheel() {
+    function windowAddMouseWheel(x) {
         var scrollFunc = function (e) {
-
+            if (x) {
+                m = x * 2;
+            }
             e = e || window.event;
             if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
                 if (e.wheelDelta > 0) { //当滑轮向上滚动时

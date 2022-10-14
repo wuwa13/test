@@ -5,20 +5,24 @@ window.addEventListener('load', function () {
     a2.onmouseover = function () {
 
         if (i == 6) {
-            a2.style.left = a2.offsetLeft - 350 + 'px';
-            a2.style.top = a2.offsetTop + 360 + 'px';
-            alert("niah0");
+            a2.style.display = 'none';
+            a2.style.top = 420 + 'px';
+            a2.style.left = -10 + 'px';
+            alert("伤心啊");
             return false;
         }
-
-        if (a2.offsetLeft >= 150 && a2.offsetLeft < 550) {
+        /*   alert(a2.offsetLeft)
+          alert(a2.offsetTop); */
+        if (a2.offsetLeft >= 140 && a2.offsetLeft < 550) {
             a2.style.left = a2.offsetLeft + 50 + 'px';
+
             i++;
-        } else if (a2.offsetTop >= 322) {
-            a2.style.top = a2.offsetTop / 10 + 'px';
+        } else if (a2.offsetTop > 380) {
+            a2.style.top = a2.offsetTop / 6 + 'px';
+            console.log(a2.style.top);
             i++;
 
-        } else if (a2.offsetLeft == 550) {
+        } else if (a2.offsetLeft == 740) {
             a2.style.left = -350 + 'px';
             i++;
         } else if (a2.offsetTop == 32) {
@@ -26,8 +30,8 @@ window.addEventListener('load', function () {
             i++;
 
         } else if (a2.offsetLeft == -200) {
-            a2.style.left = a2.offsetLeft + 200 + 'px';
-            a2.style.top = a2.offsetTop + 1 + 'px';
+            a2.style.left = a2.offsetLeft + 190 + 'px';
+            a2.style.top = a2.offsetTop + 330 + 'px';
             i++;
         }
     }
