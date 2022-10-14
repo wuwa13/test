@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.d1 {
+    z-index: 2;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: solid 1px red;
+    margin: 100px auto;
+    display: block;
+}
+
+.velas {
+    background: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    top: 65px;
+    left: 50%;
+    margin-left: -30px;
+    width: 5px;
+    height: 35px;
+    -webkit-transform: translateY(-350px);
+    -ms-transform: translateY(-350px);
+    transform: translateY(-300px);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation: in 500ms 6s ease-out forwards;
+    animation: in 500ms 6s ease-out forwards;
+}
+
+.velas:after,
+.velas:before {
+    background: rgba(255, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.22222222px;
+}
+
+.velas:after {
+    top: 35%;
+    left: 0;
+}
+
+.velas:before {
+    top: 75%;
+    left: 0;
+}
+
+/* ============================================== Fire
+*/
+.fuego {
+    border-radius: 100%;
+    position: absolute;
+    top: -23px;
+    left: 0;
+    margin-left: -2.2px;
+    width: 6.66666667px;
+    height: 18px;
+}
+
+.fuego:nth-child(1) {
+    -webkit-animation: fuego 2s 6.5s infinite;
+    animation: fuego 2s 6.5s infinite;
+}
+
+.fuego:nth-child(2) {
+    -webkit-animation: fuego 1.5s 6.5s infinite;
+    animation: fuego 1.5s 6.5s infinite;
+}
+
+.fuego:nth-child(3) {
+    -webkit-animation: fuego 1s 6.5s infinite;
+    animation: fuego 1s 6.5s infinite;
+}
+
+.fuego:nth-child(4) {
+    -webkit-animation: fuego 0.5s 6.5s infinite;
+    animation: fuego 0.5s 6.5s infinite;
+}
+
+.fuego:nth-child(5) {
+    -webkit-animation: fuego 0.2s 6.5s infinite;
+    animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+@-webkit-keyframes fuego {
+
+    0%,
+    100% {
+        background: rgba(254, 248, 97, 0.5);
+        -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(-20px) scale(0);
+        transform: translateY(-20px) scale(0);
+    }
+}
+
+@keyframes fuego {
+
+    0%,
+    100% {
+        background: rgba(254, 248, 97, 0.5);
+        -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        -webkit-transform: translateY(-20px) scale(0);
+        transform: translateY(-20px) scale(0);
+    }
+}
+
+@-webkit-keyframes in {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes in {
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.come {
+    animation-delay: 0.4s;
+    animation: coming 2s;
+    opacity: 1;
+}
+
+@keyframes coming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes coming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#cake {
+    position: absolute;
+    top: -250px;
+    left: 120px;
+
+}
+
+.d1 h4 {
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: 楷体;
+    margin-left: 178px;
+}
+
+.d1 h5 {
+    font-family: 楷体;
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 145px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.a1,
+.a2 {
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+    background-color: beige;
+
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    margin-left: 150px;
+}
+
+.a1 {
+    top: 330px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.a2 {
+    left: 0;
+    top: 400px;
+    position: absolute;
+}
+
+.info {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: solid 1px red;
+    margin: 100px auto;
+    display: none;
+}
+
+
+
+#i1 {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    bottom: 0px;
+    left: 0;
+
+}
+
+.btn {
+    position: absolute;
+    left: 70%;
+    top: 20%;
+}
+
+
+.box {
+    width: 1000px;
+    height: 700px;
+    margin: 100px auto;
+}
+
+
+.btn:hover {
+    box-shadow: 0 0 10px #77aeff;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 300px;
+    color: red;
+    text-align: center;
+}
+
+h1.active {
+    animation: count .10s;
+}
+
+.btn1 {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}

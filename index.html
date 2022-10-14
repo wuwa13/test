@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bir.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Document</title>
+
+</head>
+
+<body class="hea">
+    <div>
+        <div id="bir">
+            <div class="bir_1">
+                <form action="2.html">
+                    <div class="bir_2">
+                        <input type="text" placeholder="请输入账号" class="text" autocomplete="off" name="text"
+                            onfocus="this.placeholder=''">
+                    </div>
+                    <div class="bir_3">
+                        <input type="password" placeholder="输入密码" class="pwd" autocomplete="off" name="pwd"
+                            onfocus="this.placeholder=''">
+                    </div>
+                    <div class="bir_4">
+                        <input type="submit" value="登录" class="sub">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <ul class="bg-bubbles">
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+            <li>
+                <img src="./img/timg.gif" style="width: 100%; height: 100%" />
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    var text = document.querySelector(".text");
+    var pwd = document.querySelector(".pwd");
+    var sub = document.querySelector(".sub");
+    text.onblur = function () {
+        if (text.value.length == '' || text.value.length == null) {
+            text.placeholder = "请输入账号"
+        }
+    }
+    pwd.onblur = function () {
+        if (pwd.value.length == '' || pwd.value.length == null) {
+            pwd.placeholder = "请输入密码"
+        }
+    }
+    sub.onclick = function () {
+        if (text.value != "da" && pwd.value != "10.11") {
+            alert("错误");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+
+</html>
