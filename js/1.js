@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
             a2.style.display = 'none';
             a2.style.top = 420 + 'px';
             a2.style.left = -10 + 'px';
-            alert("伤心啊");
+            alert("伤心啊，老铁");
             return false;
         }
         /*   alert(a2.offsetLeft)
